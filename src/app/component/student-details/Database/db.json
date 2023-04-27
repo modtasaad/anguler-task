@@ -1,0 +1,54 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Ahmed",
+      "phone": "01001243394"
+    },
+    {
+      "id": 2,
+      "name": "mostafa",
+      "phone": "01001243395"
+    },
+    {
+      "id": 3,
+      "name": "sara",
+      "phone": "01001243396"
+    },
+    {
+      "id": 4,
+      "name": "ola",
+      "phone": "01001243397"
+    },
+    {
+      "id": 5,
+      "name": "mohamed",
+      "phone": "01001243398"
+    },
+    {
+      "name": "mosta saad",
+      "phone": "01001243394",
+      "id": 6
+    },
+    {
+      "name": "nhiubuiyhkk",
+      "phone": "21234567677",
+      "id": 7
+    },
+    {
+      "name": "mostafa saad",
+      "phone": "01001235594",
+      "id": 8
+    },
+    {
+      "name": "m",
+      "phone": "555",
+      "id": 9
+    },
+    {
+      "name": "mosta saad",
+      "phone": "01001243394",
+      "id": 10
+    }
+  ]
+}

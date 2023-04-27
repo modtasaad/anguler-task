@@ -1,0 +1,24 @@
+<!-- <p>student-details works!</p> -->
+<!-- <div class="  justify-content-center content-center alert alert-info"  >
+    <span class="d-block p-2 bg-dark text-white">   <h3>{{student.id}}</h3></span>
+    <span class="d-block p-2 bg-dark text-white">   <h3>{{student.name}}</h3></span>
+    <span class="d-block p-2 bg-dark text-white">   <h3>{{student.phone}}</h3></span> -->
+
+    <div class="card">
+        <div class="card-header">
+          Student Details
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0" *ngIf= "student ; else fgblock" >
+            <p>ID : {{student.id}}</p>
+            <p>Name : {{student.name}}</p>
+            <p>Phone : {{student.phone}}</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <ng-template #fgblock >
+        <div  class="alert alert-info " >
+            <h1>LOADING..........</h1>
+        </div>
+    </ng-template>

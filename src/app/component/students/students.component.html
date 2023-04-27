@@ -1,0 +1,20 @@
+<!-- <p>students works!</p> -->
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">phone</th>
+        <th scope="col">View</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of student" >
+        <th scope="row">{{s.id}}</th>
+        <td>{{s.name}}</td>
+        <td>{{s.phone}}</td>
+        <td><h1 class="btn btn-outline-info" routerLink="student/{{s.id}}"  >view</h1></td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>

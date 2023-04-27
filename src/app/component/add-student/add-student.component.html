@@ -1,0 +1,24 @@
+<!-- <p>add-student works!</p> -->
+<form style="width: 60% ; margin-left: 300px; " [formGroup]="myvalidation"    >
+    <div class="mb-3">
+      <label for="name" class="form-label">Student Name</label>
+      <input  formControlName="name" #name  type="text" class="form-control" id="name"  >
+    </div>
+    <div class="alert alert-danger" *ngIf="!NameValid" >
+        Please enter a valide name
+    </div>
+  
+    <div class="mb-3">
+      <label for="phone" class="form-label">phone</label>
+      <input  formControlName="phone" #phone type="number" class="form-control" id="phone" pattern="^01[0-2]\s\d{1,8}$" >
+    </div>
+    <div class="alert alert-danger" *ngIf="!PhoneValid" >
+        Please enter a valide phone
+    </div>
+  
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary"  (click)="add(name.value,phone.value)" >Submit</button>
+  </form>
